@@ -1,6 +1,6 @@
 .header{
   padding: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .corpoform{
@@ -35,7 +35,7 @@ padding-top: 25px;
   margin-left: 40px;
 margin-right: 40px;
 border-radius: 8px;
-background: rgba(192, 168, 168, 0.603);
+background: rgba(192, 168, 168, 0.575);
 
 }
 
@@ -55,4 +55,7 @@ background: rgba(192, 168, 168, 0.603);
 padding-left: 10px;
 padding-right: 10px;
 }
-
+a{
+  color: rgba(0, 0, 0, 0.582);
+  font-size: 13px;
+}
