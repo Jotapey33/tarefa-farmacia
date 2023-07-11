@@ -1,10 +1,58 @@
+.header{
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.corpoform{
+  display: block;
+max-width: 1100px;
+width: 100%;
+margin: 0 auto;
+padding-top: 25px;
+}
+.dados{
+ display: flex;
+ justify-content: space-between;
+
+}
+
+.contato, .endereço{
+  display: flex;
+  justify-content: left;
+}
+.telefone{
+  margin-left: 25px;
+}
+
+.numero{
+  margin-left: 25px;
+  padding-top: 22px;
+}
+
+.card{
+  display: flex;
+  margin-top: 20px ;
+  margin-left: 40px;
+margin-right: 40px;
+border-radius: 8px;
+background: rgba(192, 168, 168, 0.603);
+
+}
+
+.enviarform{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
 .esp1
 {
   display: flex;
-  justify-content: center;
-  margin-top: 250px;
+  justify-content: space-between;
+  padding-top: 90px;
+padding-left: 10px;
+padding-right: 10px;
+}
 
-}
-.esp2{
-  padding-right: 50px;
-}

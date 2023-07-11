@@ -1,8 +1,101 @@
+<div class="header">
+  <header>
+    <h1>Cadastro de Clientes:</h1>
+    </header>
+</div>
+
+<form>
+ <mat-card class="card">
+
+  <div class="corpoform">
+
+<div class="dados">
+  <div class="nome">
+  <mat-form-field appearance="fill">
+    <mat-label>Nome</mat-label>
+    <input matInput>
+  </mat-form-field>
+  </div>
+  <div class="cpf">
+    <mat-form-field appearance="fill">
+      <mat-label>CPF</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+  <div class="sexo">
+    <mat-form-field appearance="fill">
+      <mat-label>Sexo</mat-label>
+      <mat-select>
+        <mat-option value="one">masculino</mat-option>
+        <mat-option value="two">feminino</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="data">
+    <mat-form-field appearance="fill">
+      <mat-label>Data de Nascimento</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-hint>Mês/Dia/Ano Ex.: 07/26/1995</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+  <div class="pcd">
+    <section class="example-section">
+      <mat-checkbox class="checkpcd" color="primary">Cliente PCD</mat-checkbox>
+    </section>
+  </div>
+</div>
+
+
+<div class="contato">
+  <div class="email">
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="pat@example.com" [formControl]="email" required>
+    </mat-form-field>
+  </div>
+  <div class="telefone">
+  <mat-form-field class="example-full-width">
+    <mat-label>Telefone</mat-label>
+    <span matPrefix>+55 &nbsp;</span>
+    <input type="tel" matInput placeholder="38-99168-2950">
+    <mat-icon matSuffix>phone</mat-icon>
+  </mat-form-field>
+</div>
+</div>
+
+
+<div class="endereço">
+  <div class="rua">
+  <mat-form-field class="example-full-width">
+    <mat-label>Nome da Rua</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>
+  <div class="numero">
+  <td><mat-form-field class="example-full-width">
+    <mat-label>Nº</mat-label>
+    <input matInput #postalCode maxlength="5" placeholder="Ex. 551" value="">
+  </mat-form-field></td>
+</div>
+</div>
+
+  </div>
+  <div class="enviarform">
+    <button type="button" mat-flat-button color="primary"> Cadastrar
+    </button>
+  </div>
+</mat-card>
+</form>
+
+
+
 <div class="esp1">
 
   <div class="esp2">
     <button type="button" routerLink="/login" mat-flat-button color="primary">
-      <mat-icon>perm_identity</mat-icon> Login
+      <mat-icon class="idie">perm_identity</mat-icon> Login
     </button>
   </div>
 
