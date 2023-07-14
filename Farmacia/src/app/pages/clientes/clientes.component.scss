@@ -38,12 +38,23 @@ border-radius: 8px;
 background: rgba(192, 168, 168, 0.575);
 
 }
+.numerofield{
+  width: 100px;
+}
+.mesdia{
+  color: rgba(0, 0, 0, 0.582);
+}
 
 .enviarform{
   display: flex;
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+
+.cadastrar{
+  width: 200px;
+  background-color: #fff;
 }
 
 

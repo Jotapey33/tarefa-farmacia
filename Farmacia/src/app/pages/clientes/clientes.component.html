@@ -11,7 +11,7 @@
 <div class="dados">
   <div class="nome">
   <mat-form-field appearance="fill">
-    <mat-label>Nome</mat-label>
+    <mat-label>Nome completo</mat-label>
     <input matInput>
   </mat-form-field>
   </div>
@@ -34,14 +34,14 @@
     <mat-form-field appearance="fill">
       <mat-label>Data de Nascimento</mat-label>
       <input matInput [matDatepicker]="picker">
-      <mat-hint>Mês/Dia/Ano Ex.: 07/26/1995</mat-hint>
+      <mat-hint class="mesdia">Mês/Dia/Ano Ex.: 07/26/1995</mat-hint>
       <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
   </div>
   <div class="pcd">
     <section class="example-section">
-      <mat-checkbox class="checkpcd" color="primary">Cliente PCD</mat-checkbox>
+      <mat-checkbox class="checkpcd" color="primary"><b> Cliente PCD </b></mat-checkbox>
     </section>
   </div>
 </div>
@@ -73,7 +73,7 @@
   </mat-form-field>
 </div>
   <div class="numero">
-  <td><mat-form-field class="example-full-width">
+  <td><mat-form-field class="numerofield">
     <mat-label>Nº</mat-label>
     <input matInput #postalCode maxlength="5" placeholder="Ex. 551" value="">
   </mat-form-field></td>
@@ -82,7 +82,7 @@
 
   </div>
   <div class="enviarform">
-    <button type="button" mat-flat-button color="primary"> Cadastrar
+    <button type="button" mat-stroked-button color="primary" class="cadastrar"> Cadastrar
     </button>
   </div>
 </mat-card>
