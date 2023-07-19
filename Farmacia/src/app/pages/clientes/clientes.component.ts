@@ -3,6 +3,8 @@ import {FormControl, Validators} from '@angular/forms';
 import {AfterViewInit, ViewChild} from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatTableDataSource} from '@angular/material/table';
+import { ModalCadastroComponent } from './modal-cadastro/modal-cadastro.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-clientes',
@@ -21,6 +23,20 @@ export class ClientesComponent {
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
+  }
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    let dialogRef = this.dialog.open(ModalCadastroComponent,
+      {
+        width: '90%',
+        height: '83%'
+      }) ;
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }
 export interface CadastroCliente {

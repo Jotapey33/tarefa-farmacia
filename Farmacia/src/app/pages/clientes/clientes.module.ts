@@ -15,10 +15,13 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
+import { ModalCadastroComponent } from './modal-cadastro/modal-cadastro.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
-    ClientesComponent
+    ClientesComponent,
+    ModalCadastroComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +37,8 @@ import { MatTableModule } from '@angular/material/table';
     MatNativeDateModule,
     MatCardModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ]
 })
 export class ClientesModule {
